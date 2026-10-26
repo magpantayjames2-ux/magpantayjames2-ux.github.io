@@ -1,155 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>James Marion Magpantay</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-h1{
-font-size:4rem;
-margin-bottom:10px;
-}
-
-h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-p{
-max-width:700px;
-line-height:1.6;
-color:#cbd5e1;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#38bdf8;
-color:#000;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-
-section{
-padding:80px 10%;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#020617;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Magpantay | IT Associate and Computer Engineer</title>
+  <meta name="description" content="Portfolio of James Magpantay, Computer Engineering graduate and IT Associate. Projects, certifications, achievements and skills.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="James Magpantay | IT Associate and Computer Engineer">
+  <meta property="og:description" content="Real projects, certifications and achievements: the SPLI Portal, a Visitor Logs system and an AI fire detection thesis.">
+  <meta property="og:image" content="assets/images/hero/graduation.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070b14'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='%23ff6a1a'%3EJM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<header>
-<h1>James Marion Magpantay</h1>
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#home" aria-label="James Magpantay, home">James Magpantay</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#featured">Featured Project</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a class="nav__cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<h2>IT Support | System Administrator | Web Developer</h2>
+  <main id="main">
 
-<p>
-Building business applications, automation tools,
-web systems and technology solutions.
-</p>
+    <!-- HOME -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__name" id="heroName">James Magpantay</h1>
+          <p class="hero__title" id="heroTitle">IT Associate and Computer Engineer</p>
+          <p class="hero__intro" id="heroIntro"></p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#featured">See the SPLI Portal</a>
+            <a class="btn btn--glass" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero__figure">
+          <div class="hero__frame">
+            <img id="heroImg" src="assets/images/hero/graduation.jpg" alt="James Magpantay in his graduation toga" width="1280" height="1600" fetchpriority="high">
+          </div>
+          <figcaption class="hero__caption glass">
+            <strong id="heroCapTitle">BS Computer Engineering</strong>
+            <span id="heroCapSub">FAITH Colleges, graduated May 11, 2026</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="wrap">
+        <ul class="highlights glass" id="highlights"></ul>
+      </div>
+    </section>
 
-<a href="#projects" class="btn">View Projects</a>
-</header>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__media" id="aboutMedia"></div>
+        <div class="about__body">
+          <h2 class="section__title">About me</h2>
+          <div id="aboutText" class="prose"></div>
+          <div id="aboutCurrent" class="current glass"></div>
+        </div>
+      </div>
+    </section>
 
-<section id="projects">
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Education</h2>
+          <p class="section__lede">A Computer Engineering degree, a thesis that works in the real world, and hands-on IT training.</p>
+        </div>
+        <div id="educationBody" class="edu"></div>
+      </div>
+    </section>
 
-<h2>Projects</h2>
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Certifications</h2>
+          <p class="section__lede">Verified learning, each with the full certificate to view.</p>
+        </div>
+        <div id="certGrid" class="cert-grid"></div>
 
-<div class="cards">
+        <div class="subhead">
+          <h3>Training and professional development</h3>
+          <p>Seminars, workshops, trainings and events.</p>
+        </div>
+        <div id="trainingGrid" class="train-grid"></div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>HR Portal</h3>
-<p>Employee management and leave requests system.</p>
-</div>
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Achievements</h2>
+          <p class="section__lede">Recognition earned and systems delivered.</p>
+        </div>
+        <div id="achGrid" class="ach-grid"></div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Ticketing System</h3>
-<p>Helpdesk support and issue tracking solution.</p>
-</div>
+    <!-- FEATURED PROJECT -->
+    <section class="section section--featured" id="featured">
+      <div class="wrap">
+        <div id="featuredBody" class="case"></div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Document Tracker</h3>
-<p>Track and manage company documents efficiently.</p>
-</div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">More projects</h2>
+          <p class="section__lede">Systems built for real users and a thesis built to protect real spaces.</p>
+        </div>
+        <div id="projectList" class="proj-list"></div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Future Apps</h3>
-<p>Upcoming projects and innovations.</p>
-</div>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lede">Rated honestly: Advanced, Intermediate, or still Learning.</p>
+        </div>
+        <div id="skillGrid" class="skill-grid"></div>
+      </div>
+    </section>
 
-</div>
+    <!-- SERVICES -->
+    <section class="section section--tight" id="services">
+      <div class="wrap">
+        <div class="services glass">
+          <h2 class="services__title">What I can build for you</h2>
+          <ul id="serviceList" class="services__list"></ul>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- RESUME -->
+    <section class="section" id="resume">
+      <div class="wrap">
+        <div class="resume glass" id="resumeBox"></div>
+      </div>
+    </section>
 
-<section>
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap contact">
+        <h2 class="contact__title" id="contactCta">Interested in collaborating, hiring, or discussing a project? Let's connect.</h2>
+        <p class="contact__sub">Open to employment, freelance work, professional networking and collaboration.</p>
+        <div class="contact__links" id="contactLinks"></div>
+      </div>
+    </section>
+  </main>
 
-<h2>Skills</h2>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span id="footerName">James Magpantay</span>
+      <span id="footerYear"></span>
+    </div>
+  </footer>
 
-<div class="cards">
+  <!-- Lightbox for certificates and screenshots -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image">Close</button>
+    <figure class="lightbox__fig">
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
 
-<div class="card">PHP</div>
-<div class="card">MySQL</div>
-<div class="card">JavaScript</div>
-<div class="card">Bootstrap</div>
-<div class="card">Windows Server</div>
-<div class="card">Office 365</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 James Marion Magpantay
-</footer>
-
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
