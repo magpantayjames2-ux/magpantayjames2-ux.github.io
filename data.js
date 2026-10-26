@@ -386,24 +386,24 @@ window.SITE = {
     {
       category: "Professional Skills",
       items: [
-        { name: "Leadership", level: "" },
-        { name: "Problem Solving", level: "" },
-        { name: "Adaptability", level: "" },
-        { name: "Communication", level: "" },
-        { name: "Teamwork", level: "" },
-        { name: "Project Coordination", level: "" }
+        { name: "Leadership", level: "Learning" },
+        { name: "Problem Solving", level: "Intermediate" },
+        { name: "Adaptability", level: "Intermediate" },
+        { name: "Communication", level: "Intermediate" },
+        { name: "Teamwork", level: "Intermediate" },
+        { name: "Project Coordination", level: "Intermediate" }
       ]
     },
     {
-      category: "Learning and Exploring",
+      category: "Exploring",
       items: [
-        { name: "Python", level: "Learning" },
+        { name: "Python", level: "Advanced" },
         { name: "Django", level: "Learning" },
         { name: "Flask", level: "Learning" },
         { name: "React", level: "Learning" },
         { name: "Docker", level: "Learning" },
         { name: "CI/CD", level: "Learning" },
-        { name: "Automation Tools", level: "Learning" }
+        { name: "Automation Tools", level: "Intermediate" }
       ]
     }
   ],
