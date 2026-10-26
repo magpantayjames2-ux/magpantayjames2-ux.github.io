@@ -16,7 +16,7 @@ window.SITE = {
   /* Owner & contact                                                     */
   /* ------------------------------------------------------------------ */
   owner: {
-    brand: "James Magpantay",
+    brand: "James Marion Magpantay",
     fullName: "James Marion Magpantay",
     title: "IT Associate and Computer Engineer",
     intro:
@@ -25,7 +25,7 @@ window.SITE = {
     github: "https://github.com/magpantayjames2-ux",
     linkedin: "https://www.linkedin.com/in/james-marion-magpantay-127573398/",
     contactCta: "Interested in collaborating, hiring, or discussing a project? Let's connect.",
-    heroImage: "Graduation.jpg",
+    heroImage: "graduation.jpg",
     heroAlt: "James Magpantay in his FAITH Colleges graduation toga with an orange hood and medal",
     heroCaptionTitle: "BS Computer Engineering",
     heroCaptionSub: "FAITH Colleges, May 11, 2026"
@@ -43,7 +43,7 @@ window.SITE = {
   /* About me  (DRAFT — edit the wording until it sounds like you)       */
   /* ------------------------------------------------------------------ */
   about: {
-    image: "Portrait.jpg",
+    image: "portrait.jpg",
     imageAlt: "James Magpantay in a light blue shirt and striped tie",
     paragraphs: [
       "I'm a Computer Engineering graduate from FAITH Colleges and an IT Associate at Susumi Philippine Logistics, Inc. I support day-to-day IT operations and build the internal systems that keep requests, approvals and records moving.",
