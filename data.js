@@ -429,7 +429,7 @@ window.SITE = {
   /* ------------------------------------------------------------------ */
   resume: {
     enabled: true,
-    file: "James_Marion_Magpantay_CV..pdf",
+    file: "James_Marion_Magpantay_CV.pdf",
     summary: [
       "BS Computer Engineering, FAITH Colleges (2026)",
       "IT Associate, Susumi Philippine Logistics, Inc. (2026 to present)",
