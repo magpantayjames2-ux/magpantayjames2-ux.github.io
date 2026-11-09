@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automated Fire and Smoke Detection | James Magpantay</title>
+<meta name="description" content="Thesis project: an AI-based fire and smoke detection system with automatic suppression, with measured mAP, precision, recall and response time.">
+<meta name="theme-color" content="#060a14">
+<meta property="og:title" content="Automated Fire and Smoke Detection | James Magpantay">
+<meta property="og:description" content="Thesis project: an AI-based fire and smoke detection system with automatic suppression, with measured mAP, precision, recall and response time.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/thesis-hardware.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23060a14'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='%23ff6a1a'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"><div class="nav__inner">
+<a class="nav__brand" href="../index.html" aria-label="James Magpantay, home">James <b>Magpantay</b></a>
+<button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+<nav class="nav__links" id="navLinks" aria-label="Primary"><a href="../index.html">Home</a><a href="../about.html">About Me</a><a href="../education.html">Education</a><a href="../achievements.html">Achievements</a><a href="../certificates.html">Certificates</a><a href="../projects.html" aria-current="page">Projects</a><a href="../skills.html">Skills</a><a href="../resume.html">Resume</a><a class="nav__cta" href="../contact.html">Contact</a></nav>
+</div></header>
+<main id="main">
+<section class="phero"><div class="wrap">
+<p class="eyebrow rv">Thesis project &middot; BS Computer Engineering</p><h1 class="rv">Automated Fire and Smoke Detection</h1>
+<p class="lead rv">An AI system that spots fire and smoke on camera, then triggers a suppression system on its own. Built and defended as my thesis at FAITH Colleges.</p>
+<div class="phero__meta rv"><span><b>Team</b> 4 members</span><span><b>My role</b> Team leader, programmer, hardware</span><span><b>Adviser</b> PECE Favis Balinado</span></div>
+<div class="heroimg rv" data-zoom="../assets/img/thesis-hardware.jpg" data-cap="Detection and suppression hardware" style="cursor:zoom-in;max-width:560px"><img src="../assets/img/thesis-hardware.jpg" alt="Fire detection and suppression hardware on a stand" width="1200" height="1600"></div>
+<div style="margin-top:22px" class="rv"><div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Computer Vision</span><span class="chip">Machine Learning</span><span class="chip">Relay Module</span><span class="chip">Sensors</span><span class="chip">Fire Suppression</span></div></div>
+</div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">Overview</h2><div class="rv"><div class="prose"><p>Fires grow fast, and a few seconds can decide the damage. This system watches camera feeds, uses a trained model to detect fire and smoke, and sends a trigger signal that activates suppression automatically, while raising an alert on a monitoring screen.</p><p>I led the team and built the software and hardware integration: the detection pipeline, the relay trigger logic, the monitoring interface, and the testing.</p></div></div></div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">The problem</h2><div class="rv"><div class="prose"><p>Conventional smoke detectors react only after smoke reaches them, and they only sound an alarm. Someone still has to respond. The goal was a system that detects visually and acts without waiting for a person.</p></div></div></div></section>
+<section class="block"><div class="wrap"><h2 class="rv">How it works</h2><ol class="flow"><li><b>Camera</b><span>CCTV and infrared inputs</span></li><li><b>Laptop</b><span>runs the detection model</span></li><li><b>AI detection</b><span>fire and smoke model</span></li><li><b>Trigger signal</b><span>sent through a relay module</span></li><li><b>Suppression</b><span>activates automatically</span></li><li><b>Alert and monitoring</b><span>live feed on localhost</span></li></ol></div></section>
+<section class="block"><div class="wrap"><h2 class="rv">Measured performance</h2><div class="grid grid--4"><div class="card glass metric rv"><b data-count="83.6" data-suffix="%">83.6%</b><small>mAP@50</small><p><strong style="color:var(--ink)">Valid set.</strong> Mean average precision at 50% overlap: how well the model finds fires and smoke and places the box correctly.</p></div><div class="card glass metric rv"><b data-count="90.5" data-suffix="%">90.5%</b><small>Precision</small><p><strong style="color:var(--ink)">Valid set.</strong> Of everything flagged as fire or smoke, this share was real. High precision means fewer false alarms and fewer needless suppression triggers.</p></div><div class="card glass metric rv"><b data-count="74.4" data-suffix="%">74.4%</b><small>Recall</small><p><strong style="color:var(--ink)">External test.</strong> Of all real fire and smoke instances, this share was found. Measured on external data the model had not trained on.</p></div><div class="card glass metric rv"><b>4.5 to 7 s</b><small>Response time</small><p><strong style="color:var(--ink)">Detection to action.</strong> Repeated trials ranged from 4.5 to 7 seconds from detection to suppression activation.</p></div></div><div class="photos photos--2" style="margin-top:28px;max-width:640px"><figure class="photo rv" style="grid-column:1/-1"><button type="button" data-zoom="../assets/img/thesis-metrics.png" data-cap="Model metrics" aria-label="View larger: model metrics"><img src="../assets/img/thesis-metrics.png" alt="Metrics panel showing mAP@50 83.6%, Precision 90.5%, Recall 74.4%" style="aspect-ratio:auto" loading="lazy"></button><figcaption>Metrics panel from the trained model</figcaption></figure></div></div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">Testing</h2><div class="rv"><div class="prose"><p>The system was tested indoors against multiple fire and smoke scenarios, with accuracy measurement, performance validation and repeated response-time trials. The detection model ran on a laptop connected to the cameras and the relay hardware.</p></div></div></div></section>
+<section class="block"><div class="wrap"><h2 class="rv">Photos</h2><div class="photos"><figure class="photo rv"><button type="button" data-zoom="../assets/img/thesis-render.jpg" data-cap="Design render of the suppression and detection setup" aria-label="View larger: Design render of the suppression and detection setup"><img src="../assets/img/thesis-render.jpg" alt="Design render of the suppression and detection setup" loading="lazy"></button><figcaption>Design render of the suppression and detection setup</figcaption></figure><figure class="photo rv"><button type="button" data-zoom="../assets/img/thesis-stand.jpg" data-cap="Full setup on its stand" aria-label="View larger: Full setup on its stand"><img src="../assets/img/thesis-stand.jpg" alt="Full setup on its stand" loading="lazy"></button><figcaption>Full setup on its stand</figcaption></figure><figure class="photo rv"><button type="button" data-zoom="../assets/img/thesis-test.jpg" data-cap="Running a live detection test on the laptop" aria-label="View larger: Running a live detection test on the laptop"><img src="../assets/img/thesis-test.jpg" alt="Running a live detection test on the laptop" loading="lazy"></button><figcaption>Running a live detection test on the laptop</figcaption></figure></div></div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">Design decisions</h2><div class="rv"><ul class="checks"><li><b>Dual camera input.</b> A CCTV camera and an infrared camera together improve detection reliability.</li><li><b>Relay-based actuation.</b> A relay module lets the software trigger the suppression hardware safely through a simple signal.</li><li><b>Local monitoring interface.</b> A localhost interface shows live feeds and system status on any connected screen.</li><li><b>Honest metrics.</b> Results are reported as mAP, precision and recall, not a single accuracy figure.</li></ul></div></div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">Challenges solved</h2><div class="rv"><ul class="checks"><li>Balancing precision and recall so the system catches real fires without needless triggers</li><li>IP camera calibration, height mapping and directional setup for good coverage</li><li>Integrating software detection with physical hardware reliably</li><li>Keeping response time within a few seconds</li></ul></div></div></section>
+<section class="block"><div class="wrap two"><h2 class="rv">Key achievements</h2><div class="rv"><ul class="checks"><li>Led a four-person team from concept to a working, defended system</li><li>Built both the software pipeline and the hardware integration</li><li>Reported 83.6% mAP@50, 90.5% precision and 74.4% recall</li><li>Delivered a 4.5 to 7 second detection-to-suppression response</li></ul></div></div></section>
+<section class="block"><div class="wrap pnav"><a class="btn btn--glass" href="spli-portal.html">&larr; SPLI Portal</a><a class="btn btn--primary" href="academic-projects.html">Next: Arduino projects &rarr;</a></div></section>
+</main>
+<footer class="footer"><div class="wrap footer__inner">
+<span>&copy; 2026 James Marion C. Magpantay</span>
+<span><a href="../contact.html">Contact</a> &middot; <a href="https://github.com/magpantayjames2-ux" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/james-marion-magpantay-127573398/" target="_blank" rel="noopener">LinkedIn</a></span>
+</div></footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+<button id="lbClose" type="button">Close</button>
+<figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

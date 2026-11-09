@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arduino Projects | James Magpantay</title>
+<meta name="description" content="Academic Arduino projects by James Magpantay: a 4-bit ADC to DAC converter and a line follower robot.">
+<meta name="theme-color" content="#060a14">
+<meta property="og:title" content="Arduino Projects | James Magpantay">
+<meta property="og:description" content="Academic Arduino projects by James Magpantay: a 4-bit ADC to DAC converter and a line follower robot.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/line-follower.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23060a14'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='%23ff6a1a'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"><div class="nav__inner">
+<a class="nav__brand" href="../index.html" aria-label="James Magpantay, home">James <b>Magpantay</b></a>
+<button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+<nav class="nav__links" id="navLinks" aria-label="Primary"><a href="../index.html">Home</a><a href="../about.html">About Me</a><a href="../education.html">Education</a><a href="../achievements.html">Achievements</a><a href="../certificates.html">Certificates</a><a href="../projects.html" aria-current="page">Projects</a><a href="../skills.html">Skills</a><a href="../resume.html">Resume</a><a class="nav__cta" href="../contact.html">Contact</a></nav>
+</div></header>
+<main id="main">
+<section class="phero"><div class="wrap">
+<p class="eyebrow rv">Academic projects &middot; FAITH Colleges</p><h1 class="rv">Arduino hardware projects</h1>
+<p class="lead rv">Two hands-on builds from my Computer Engineering degree. In both I wired the circuits, breadboarded the hardware and wrote the Arduino code.</p>
+<div class="phero__meta rv"><span><b>Role</b> Hardware and programmer</span><span><b>Platform</b> Arduino</span></div>
+</div></section>
+<section class="block" id="adc-dac"><div class="wrap two">
+<div class="rv"><p class="eyebrow">Project one</p><h2>4-Bit ADC to DAC Converter</h2><div style="margin-top:14px"><div class="chips"><span class="chip">Arduino</span><span class="chip">Breadboarding</span><span class="chip">ADC</span><span class="chip">DAC</span><span class="chip">Electronics</span></div></div></div>
+<div class="rv"><div class="prose"><p>A circuit that reads an analog signal, converts it to a 4-bit digital value, and converts it back to analog. It demonstrates how digital systems sample and reconstruct real-world signals.</p><p>I built the full circuit on a breadboard, and programmed the Arduino to run it. Working at this level made quantization and resolution concrete, because the 4-bit steps are visible in the output.</p></div>
+<div class="photos photos--2" style="margin-top:20px;max-width:420px"><figure class="photo rv"><button type="button" data-zoom="../assets/img/adc-dac.jpg" data-cap="4-bit ADC to DAC circuit on a breadboard" aria-label="View larger: 4-bit ADC to DAC circuit on a breadboard"><img src="../assets/img/adc-dac.jpg" alt="4-bit ADC to DAC circuit on a breadboard" loading="lazy"></button><figcaption>4-bit ADC to DAC circuit on a breadboard</figcaption></figure></div></div>
+</div></section>
+<section class="block" id="line-follower"><div class="wrap two">
+<div class="rv"><p class="eyebrow">Project two</p><h2>Line Follower Robot</h2><div style="margin-top:14px"><div class="chips"><span class="chip">Arduino Uno</span><span class="chip">IR Sensors</span><span class="chip">Motor Driver</span><span class="chip">Robotics</span></div></div></div>
+<div class="rv"><div class="prose"><p>A small autonomous robot that follows a line on the ground. Infrared sensors detect the line, the Arduino Uno decides how to steer, and a motor driver controls the wheels.</p><p>I wired the sensors and motor driver, assembled the chassis electronics, and programmed the steering logic.</p></div>
+<div class="photos photos--2" style="margin-top:20px;max-width:420px"><figure class="photo rv"><button type="button" data-zoom="../assets/img/line-follower.jpg" data-cap="Line follower robot with Arduino Uno and IR sensors" aria-label="View larger: Line follower robot with Arduino Uno and IR sensors"><img src="../assets/img/line-follower.jpg" alt="Line follower robot with Arduino Uno and IR sensors" loading="lazy"></button><figcaption>Line follower robot with Arduino Uno and IR sensors</figcaption></figure></div></div>
+</div></section>
+<section class="block"><div class="wrap pnav"><a class="btn btn--glass" href="fire-detection.html">&larr; Fire Detection</a><a class="btn btn--primary" href="../projects.html">All projects</a></div></section>
+</main>
+<footer class="footer"><div class="wrap footer__inner">
+<span>&copy; 2026 James Marion C. Magpantay</span>
+<span><a href="../contact.html">Contact</a> &middot; <a href="https://github.com/magpantayjames2-ux" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/james-marion-magpantay-127573398/" target="_blank" rel="noopener">LinkedIn</a></span>
+</div></footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+<button id="lbClose" type="button">Close</button>
+<figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
